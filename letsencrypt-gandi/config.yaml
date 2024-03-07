@@ -3,7 +3,7 @@ version: 1.0.1
 slug: letsencrypt-gandi
 name: Let's Encrypt Gandi
 description: Manage certificate from Let's Encrypt with fixed gandi
-url: https://github.com/home-assistant/addons/tree/master/letsencrypt
+url: https://github.com/cowboyrushforth/letsencrypt-ha-gandi/tree/main/letsencrypt-gandi
 arch:
   - armhf
   - armv7
