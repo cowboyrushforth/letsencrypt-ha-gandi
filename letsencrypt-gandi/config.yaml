@@ -1,5 +1,5 @@
 ---
-version: 5.0.15
+version: 1.0.1
 slug: letsencrypt-gandi
 name: Let's Encrypt Gandi
 description: Manage certificate from Let's Encrypt with fixed gandi
@@ -11,7 +11,6 @@ arch:
   - amd64
   - i386
 boot: manual
-image: ghcr.io/disconn3ct/addons/{arch}-addon-letsencrypt
 init: false
 map:
   - ssl:rw
