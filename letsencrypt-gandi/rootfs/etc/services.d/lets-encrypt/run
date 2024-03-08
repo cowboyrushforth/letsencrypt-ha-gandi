@@ -116,7 +116,7 @@ elif [ "${DNS_PROVIDER}" == "dns-gandi" ]; then
     fi
     if bashio::config.exists 'dns.gandi_api_key'; then
         bashio::log.info "Use Gandi gandi_api_key"
-        echo "gandi_api_key = $(bashio::config 'dns.gandi_api_key')" >> "/data/dnsapikey"
+        echo "dns_gandi_api_key = $(bashio::config 'dns.dns_gandi_api_key')" >> "/data/dnsapikey"
     fi
     PROVIDER_ARGUMENTS+=("--authenticator" "${DNS_PROVIDER}" "--${DNS_PROVIDER}-credentials" "/data/dnsapikey" "--${DNS_PROVIDER}-propagation-seconds" "${PROPAGATION_SECONDS}" ) 
 
