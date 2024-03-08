@@ -11,7 +11,7 @@ arch:
   - amd64
   - i386
 boot: manual
-image: ghcr.io/cowboyrushforth/{arch}-addon-letsencrypt-gandi
+image: ghcr.io/disconn3ct/addons/{arch}-addon-letsencrypt
 init: false
 map:
   - ssl:rw
