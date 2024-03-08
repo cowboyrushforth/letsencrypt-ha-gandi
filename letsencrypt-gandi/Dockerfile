@@ -35,6 +35,8 @@ RUN \
     && apk add --no-cache --virtual .build-dependencies \
         build-base \
         libffi-dev \
+        py3-pip \
+        python3 \
         musl-dev \
         openssl-dev \
         cargo \
