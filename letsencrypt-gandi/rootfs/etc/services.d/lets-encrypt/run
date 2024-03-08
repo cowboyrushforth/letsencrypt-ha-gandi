@@ -118,7 +118,7 @@ elif [ "${DNS_PROVIDER}" == "dns-gandi" ]; then
         bashio::log.info "Use Gandi gandi_api_key"
         echo "dns_gandi_api_key = $(bashio::config 'dns.dns_gandi_api_key')" >> "/data/dnsapikey"
     fi
-    PROVIDER_ARGUMENTS+=("--authenticator" "${DNS_PROVIDER}" "--${DNS_PROVIDER}-credentials" "/data/dnsapikey" "--${DNS_PROVIDER}-propagation-seconds" "${PROPAGATION_SECONDS}" ) 
+    PROVIDER_ARGUMENTS+=("--authenticator" "${DNS_PROVIDER}" "--${DNS_PROVIDER}-credentials" "/data/dnsapikey" "--${DNS_PROVIDER}-propagation-seconds" "${PROPAGATION_SECONDS}" "-v" ) 
 
 # Hetzner
 elif [ "${CHALLENGE}" == "dns" ] && [ "${DNS_PROVIDER}" == "dns-hetzner" ]; then
